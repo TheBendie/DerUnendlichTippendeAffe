@@ -13,6 +13,7 @@ namespace WordGenerator
         static bool beenden = false;
         static void Main(string[] args)
         {
+            // Setting Title
             Console.Title = "Der Unendlich Tippende Affe";
             beenden = false;
             do
