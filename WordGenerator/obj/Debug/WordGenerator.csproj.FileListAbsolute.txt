@@ -1,0 +1,6 @@
+c:\users\bennet\documents\visual studio 2015\Projects\WordGenerator\WordGenerator\bin\Debug\WordGenerator.exe.config
+c:\users\bennet\documents\visual studio 2015\Projects\WordGenerator\WordGenerator\bin\Debug\WordGenerator.exe
+c:\users\bennet\documents\visual studio 2015\Projects\WordGenerator\WordGenerator\bin\Debug\WordGenerator.pdb
+c:\users\bennet\documents\visual studio 2015\Projects\WordGenerator\WordGenerator\obj\Debug\WordGenerator.csprojResolveAssemblyReference.cache
+c:\users\bennet\documents\visual studio 2015\Projects\WordGenerator\WordGenerator\obj\Debug\WordGenerator.exe
+c:\users\bennet\documents\visual studio 2015\Projects\WordGenerator\WordGenerator\obj\Debug\WordGenerator.pdb
