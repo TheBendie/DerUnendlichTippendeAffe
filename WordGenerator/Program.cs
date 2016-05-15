@@ -9,7 +9,6 @@ namespace WordGenerator
     class Program
     {
         static int tries;
-        static int sectries;
         static string searchedword;
         static bool beenden = false;
         static void Main(string[] args)
@@ -43,15 +42,8 @@ namespace WordGenerator
                     output += (char)letters[r];
                     // Added einen Try
                     tries++;
-                    sectries++;
                     // Schreibt den geschriebenen Buchstaben in die Konsole
                     Console.Write((char)letters[r]);
-                    // Cleart die Konsole um LAG zu vermeiden
-                    if(sectries >= 50000)
-                    {
-                        Console.Clear();
-                        sectries = 0;
-                    }
                     // Solange bis das gesuchte Wort im Output enthalten ist.                    
                 } while (!output.Contains(searchedword));
 
