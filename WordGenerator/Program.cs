@@ -13,10 +13,10 @@ namespace WordGenerator
         static bool beenden = false;
         static void Main(string[] args)
         {
+            Console.Title = "Der Unendlich Tippende Affe";
+            beenden = false;
             do
             {
-                // Damit das Programm immer von vorne beginnt.
-                beenden = false;
                 // Setzt Versuche wieder auf 0
                 tries = 0;
                 Random rnd = new Random();
