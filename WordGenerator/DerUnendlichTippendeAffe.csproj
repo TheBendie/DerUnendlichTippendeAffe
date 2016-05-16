@@ -7,8 +7,8 @@
     <ProjectGuid>{AA1F67B3-6A14-486B-B2FF-9314CEDBA364}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WordGenerator</RootNamespace>
-    <AssemblyName>WordGenerator</AssemblyName>
+    <RootNamespace>DerUnendlichTippendeAffe</RootNamespace>
+    <AssemblyName>DerUnendlichTippendeAffe</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
