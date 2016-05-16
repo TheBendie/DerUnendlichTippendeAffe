@@ -5,6 +5,6 @@ Link: https://www.youtube.com/watch?v=Mr-kND5o430
 ---
 
 # How to run?
-Go to "WorldGenerator\bin\Release\" and run: WordGenerator.exe
+Go to "WorldGenerator\bin\Release\" and run: DerUnendlichTippendeAffe.exe
 
 ---
