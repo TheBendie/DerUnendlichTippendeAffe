@@ -27,13 +27,20 @@ namespace WordGenerator
                 string output = "";
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("WICHTIG! Das Programm wird über die Zeit immer CPU lastiger. Man sollte es nicht zu lange laufen lassen.");
+                Console.WriteLine("WICHTIG! Bitte nicht's drücken, während das Programm arbeitet UND im Vordergrund ist.");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("INFO: Desto länger der Satz/das Wort, desto länger dauert es.");
                 Console.WriteLine("Der Affe soll tippen: ");
                 Console.ForegroundColor = ConsoleColor.Cyan;
-
                 searchedword = Console.ReadLine();
                 Console.ResetColor();
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("Gesucht: " + searchedword);
+                Console.WriteLine("");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Tastenanschläge: ");
+                Console.CursorVisible = false;
                 // Main-Aktivität
                 do
                 {
@@ -44,8 +51,10 @@ namespace WordGenerator
                     // Added einen Try
                     tries++;
                     // Schreibt den geschriebenen Buchstaben in die Konsole
-                    Console.Write((char)letters[r]);
-                    // Solange bis das gesuchte Wort im Output enthalten ist.                    
+                    Console.Write(tries);
+                    Console.SetCursorPosition(Console.CursorLeft - tries.ToString().Length, Console.CursorTop);
+                    
+                    // Solange bis das gesuchte Wort im Output enthalten ist.       
                 } while (!output.Contains(searchedword));
 
                 //Statistiken
@@ -61,7 +70,7 @@ namespace WordGenerator
                 Console.WriteLine(output);
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("Drücke einen beliebigen Knopf, um Fortzufahren.");
-                Console.ReadLine();
+                Console.ReadKey();
                 Console.Clear();
                 Console.ResetColor();
             } while (beenden == false);
