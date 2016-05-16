@@ -27,7 +27,6 @@ namespace WordGenerator
                 string output = "";
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("WICHTIG! Das Programm wird über die Zeit immer CPU lastiger. Man sollte es nicht zu lange laufen lassen.");
-                Console.WriteLine("WICHTIG! Bitte nicht's drücken, während das Programm arbeitet UND im Vordergrund ist.");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("INFO: Desto länger der Satz/das Wort, desto länger dauert es.");
                 Console.WriteLine("Der Affe soll tippen: ");
@@ -67,7 +66,11 @@ namespace WordGenerator
                 Console.ResetColor();
                 Console.ReadKey();
                 Console.Clear();
-                Console.WriteLine(output);
+                Console.Write(output);
+                // Highlighting the searched word.
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.SetCursorPosition(Console.CursorLeft - searchedword.ToString().Length, Console.CursorTop);
+                Console.WriteLine(searchedword);
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("Drücke einen beliebigen Knopf, um Fortzufahren.");
                 Console.ReadKey();
